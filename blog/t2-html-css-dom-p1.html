@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML, CSS & DOM</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lost in translation</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="c1-reflection-blog.html">Reflections</a>
+                    </li>
+                    <li>
+                        <a href="c1-time-and-habits-blog.html">Time and habits</a>
+                    </li>
+                    <li>
+                        <a href="t2-html-css-dom-p1.html">HTML, CSS & DOM</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>HTML, CSS & DOM</h2>
+            <h3>Feature wishlist</h3>
+            <ul>
+                <li>Changes to images / fonts in grid layout when user hovers over an item</li>
+                <li>Animations and interactive features like the robot
+                    <a href="http://www.csszengarden.com/215/" target="_blank">here</a>
+                </li>
+                <li>A good, clean responsive layout</li>
+            </ul>
+
+            <h3>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical
+                friend?</h3>
+            <p>
+                Imagine we are building a house. We use HTML to build the foundation and the general structure of the house. Your basic HTML
+                will look like a blueprint of your house, you can see all rooms in the blueprint.
+            </p>
+            <p>
+                Next comes CSS, we use it to design the look and feel of each individual room, it lets us have pink and purple walls with
+                round or triangular corners.
+            </p>
+            <P>
+                DOM stands for Document Object Model. You could picture it like a tree-layout of all the HTML you have written. So if you
+                look at this page in the Chrome dev tools (right-click right here and select Inspect in Chrome), all HTML
+                is contained in the HTML tags. They are the trunk of our tree. The tree then branches into a head and a body
+                and each of those branches have even more smaller branches within them.
+                <br /> If we stick to our building a house analogy, you could look at the DOM as a description on how to access
+                your house and each element within that house.
+            </P>
+            <h3>What is meant by boxifying design?</h3>
+            <p>
+                When you first look at a layout for a new website that you are tasked to build, it is easiest to break it down into individual
+                boxes.
+                <br /> On this very page for instance you can see various boxes:
+            </p>
+            <ol>
+                <li>The blue box at the top that contains the name of the site</li>
+                <li>The navigation bar</li>
+                <li>The area with all the content you are currently reading</li>
+                <li>And the footer at the very bottom of the page</li>
+            </ol>
+            Breaking things down into boxes, helps you set up the basic structure of your new website.
+
+            <h3>What is the box model?</h3>
+            <p>
+                You will hear the term box model a lot when you work with CSS. Each HTML element is its own little box and each one of those
+                boxes consists of the actual content (e.g. an image or simply some text), some padding, a border and a margin.
+            </p>
+            <img src="../images/boxmodel.png" alt="The CSS box model" />
+            <p>
+                In this box model it is important to note that the content and the padding all added up make up the size of an element. So
+                if you have an image that is 100 pixels wide and you add some padding of 10 pixels on either side, the actual
+                size of the image is 120 pixels. Use margins to add space between HTML elements.
+                <br /> Right-click anywhere on this page and select Inspect to open up Developer Tools in Google Chrome. If you
+                look to the area that contains all your styles and event listeners, you will see a tab called computed. Click
+                on it to have a look at how individual items on this page are laid out.
+            </p>
+        </main>
+        <footer>
+            <p>Created by Cornelia Schulz</p>
+        </footer>
+    </div>
+</body>
+
+</html>
