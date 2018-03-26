@@ -10,3 +10,7 @@ body {
 .blog-row img {
     max-height: 200px; 
 }
+
+footer {
+    clear: both;
+}
