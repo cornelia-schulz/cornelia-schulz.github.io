@@ -26,7 +26,16 @@ nav ul li a {
 
 .social_media p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.share-btn {
+    display: inline-block;
+    color: #333;
+    border: none;
+    padding: 0.5em;
+    outline: none;
+    text-align: center;
 }
 
 main {
@@ -45,6 +54,10 @@ aside {
 
 aside ul {
     list-style-type: none;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 footer {
@@ -77,7 +90,7 @@ footer {
         overflow: hidden;
     }
 
-    nav ul li {
+    nav ul li, aside ul li {
         display: inline-block;
         float: left;
     }
@@ -90,6 +103,17 @@ footer {
 
     nav ul li a:hover:not(.active){
         background-color: #111;
+    }
+
+    .share-btn {
+        display: inline-block;
+        color: #333;
+        border: none;
+        padding: 0.5em;
+        width: 4em;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+        outline: none;
+        text-align: center;
     }
 
     aside {
