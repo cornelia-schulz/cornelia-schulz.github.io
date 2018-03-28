@@ -61,7 +61,8 @@ aside ul {
 }
 
 .in-text-image {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     border: 1px solid #333;
     border-radius: 2px;
     padding: 5px;
@@ -69,7 +70,7 @@ aside ul {
 }
 
 .wireframe-images img {
-    width: 100%;
+    width: 90%;
     max-height: 400px;
     border: 1px solid #333;
     border-radius: 2px;
@@ -138,6 +139,10 @@ footer {
         display: block;
         border-left: 1px solid #333;
         padding-left: 1%;
+    }
+
+    .wireframe-images img {
+        width: 100%;
     }
 
     .fa-backward, .fa-forward {
