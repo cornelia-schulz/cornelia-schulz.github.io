@@ -57,7 +57,7 @@
             </div>
             <div class="row">
                 <div class="ten columns">
-                    <h1>JavaScript Basics</h1>
+                    <h1>JavaScript basics</h1>
                     <h3>How does JavaScript compare to HTML and CSS?</h3>
                     <p>If you think of JavaScript in terms of our house analogy, whereby HTML are the foundations and walls and CSS is the design such as the colours of your walls,
                         the size of your windows, etc, JavaScript makes things a bit more dynamic and interactive. For example if you press down the handle of your door, the door will open. 
@@ -71,54 +71,72 @@
                         To take a real world example, we will look at making soup for dinner:
                     </p>
 
+                    <ol>
+                        <li>Open fridge and check if there are all ingredients for my soup</li>
+                        <li>No? GO SHOPPING!!!</li>
+                        <li>Check fridge again. Are there now all ingredients I need?</li>
+                        <li>Yes? GET CHOPPING!!!</li>
+                        <li>Add the chopped ingredients one after the other into the pot</li>
+                        <li>Add water</li>
+                        <li>Stir!</li>
+                        <li>Add seasoning</li>
+                        <li>Bring to boil</li>
+                        <li>Stir!</li>
+                        <li>Keep stirring...</li>
+                        <li>Bon appetit!</li>
+                    </ol>
+                    <p>And the code would probably look something like this: <br/>
+
                     <code>
                         function goShopping(){ <br />
-                            get up and go shopping;<br />
-                            return (full fridge);<br />
+                            <span class="indent">get up and go shopping;</span><br />
+                            <span class="indent">return (full fridge);</span><br />
                         }<br />
                         function chop(ingredients){<br />
-                            get ingredients from fridge and cupboards and start chopping;<br />
-                            return (ingredients ready for cooking);<br />
+                            <span class="indent">get ingredients from fridge and cupboards and start chopping;</span><br />
+                            <span class="indent">return (ingredients ready for cooking);</span><br />
                         }<br />
                         function boil(choppedIngredients){<br />
-                            for (each choppedIngredient){<br />
-                                add choppedIngredient to pot;<br />
-                            }<br />
-                            add water to the pot;<br />
-                            turn on the heat;<br />
+                            <span class="indent">for (each choppedIngredient){</span><br />
+                                <span class="double-indent">add choppedIngredient to pot;</span><br />
+                                <span class="indent">}</span><br />
+                                    <span class="indent">add water to the pot;</span><br />
+                                        <span class="indent">turn on the heat;</span><br />
                         }<br />
                         function addSpices (spices){<br />
-                            for (each spice){<br />
-                                add spice to ingredients;<br />
-                            }<br />
+                            <span class="indent">for (each spice){</span><br />
+                                <span class="double-indent">add spice to ingredients;</span><br />
+                                <span class="indent">}</span><br />
                         }<br />
-                        function stir(wooden spoon){<br />
-                            take wooden spoon and mix the ingredients in the pot;<br />
-                        }<br />
+                        <span class="indent">function stir(wooden spoon){</span><br />
+                            <span class="indent">take wooden spoon and mix the ingredients in the pot;</span><br />
+                            <span class="indent">}</span><br />
                         function eat(soup)<br />
                         <br />
                         function makeDinner(recipe){<br />
-                            if (everything on your recipe is in your fridge){<br />
-                                for (each item on your recipe){<br />
-                                    chop(item);<br />
-                                }   <br />
-                                stir(woodenSpoon);              <br />               
-                                boil(choppedIngredients);<br />
-                                stir(woodenSpoon);<br />
-                                stir(woodenSpoon);<br />
-                                stir(woodenSpoon);<br />
-                                return(soup);<br />
-                            }<br />
-                            else {<br />
-                                goShopping();<br />
-                            }<br />
-                        }<br />
+                            <span class="indent">if (everything on your recipe is in your fridge){</span><br />
+                                <span class="indent"></span>for (each item on your recipe){</span><br />
+                                    <span class="double-indent">chop(item);</span><br />
+                                    <span class="indent">}</span>   <br />
+                                    <span class="indent">stir(woodenSpoon);</span>              <br />               
+                                    <span class="indent">boil(choppedIngredients);</span><br />
+                                    <span class="indent">stir(woodenSpoon);</span><br />
+                                    <span class="indent">stir(woodenSpoon);</span><br />
+                                    <span class="indent">stir(woodenSpoon);</span><br />
+                                    <span class="indent">return(soup);</span><br />
+                                    <span class="indent">}</span><br />
+                                    <span class="indent">else {</span><br />
+                                        <span class="double-indent">goShopping();</span><br />
+                                        <span class="double-indent">makeDinner(recipe);</span><br/>
+                                        <span class="indent">}</span><br />
+                                        <span class="indent">}</span><br />
                         <br />
                         eat = makeDinner(soup);<br />
+                    </p>
                     </code>
-                    <h3>Explain the difference between accessing data from arrays and objects.</h3>
+                    <h3>What's the difference between accessing data from arrays and objects?</h3>
                     <p></p>
-                    <h3>Explain what functions are and why they are useful.</h3>
+                    <h3>What are functions and why are they useful?</h3>
                     <p></p>
                 </div>
                 <aside class="two columns">
@@ -153,7 +171,7 @@
                             <a href="t3-design-to-web-blog.html">Design to web</a>
                         </li>
                         <li>
-                            <a href="t4-javascript-basics.html">Design to web</a>
+                            <a href="t4-javascript-basics.html">JavaScript basics</a>
                         </li>
                     </ul>
                 </aside>

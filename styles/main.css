@@ -48,6 +48,14 @@ main {
     max-height: 180px; 
 }
 
+.indent {
+    margin-left: 40px;
+}
+
+.double-indent {
+    margin-left: 80px;
+}
+
 aside {
     display: none;
 }
