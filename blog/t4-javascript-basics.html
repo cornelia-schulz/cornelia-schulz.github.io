@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lost in translation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog for code newbies">
+    <meta name="author" content="Cornelia Schulz">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="logo">
+                    <p>Lost in translation</p>
+                </div>
+                <nav class="">
+                    <ul class="nav">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="social_media">
+                <p>
+                    <a href="#">
+                        <i class="fa fa-backward u-pull-left" aria-hidden="true"></i>
+                    </a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                    <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-forward u-pull-right" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="row">
+                <div class="ten columns">
+                    <h1>JavaScript Basics</h1>
+                    <h3>How does JavaScript compare to HTML and CSS?</h3>
+                    <p>If you think of JavaScript in terms of our house analogy, whereby HTML are the foundations and walls and CSS is the design such as the colours of your walls,
+                        the size of your windows, etc, JavaScript makes things a bit more dynamic and interactive. For example if you press down the handle of your door, the door will open. 
+                    </p>
+                    <p>
+                        Use JavaScript to change the values and properties of any HTML tag on your website.
+                    </p>
+                    <h3>What are control flow and loops?</h3>
+                    <p>
+                        Control flow is the order in which the computer executes the code we write. The computer will also make decisions by executing code based on certain conditions.
+                        To take a real world example, we will look at making soup for dinner:
+                    </p>
+
+                    <code>
+                        function goShopping(){ <br />
+                            get up and go shopping;<br />
+                            return (full fridge);<br />
+                        }<br />
+                        function chop(ingredients){<br />
+                            get ingredients from fridge and cupboards and start chopping;<br />
+                            return (ingredients ready for cooking);<br />
+                        }<br />
+                        function boil(choppedIngredients){<br />
+                            for (each choppedIngredient){<br />
+                                add choppedIngredient to pot;<br />
+                            }<br />
+                            add water to the pot;<br />
+                            turn on the heat;<br />
+                        }<br />
+                        function addSpices (spices){<br />
+                            for (each spice){<br />
+                                add spice to ingredients;<br />
+                            }<br />
+                        }<br />
+                        function stir(wooden spoon){<br />
+                            take wooden spoon and mix the ingredients in the pot;<br />
+                        }<br />
+                        function eat(soup)<br />
+                        <br />
+                        function makeDinner(recipe){<br />
+                            if (everything on your recipe is in your fridge){<br />
+                                for (each item on your recipe){<br />
+                                    chop(item);<br />
+                                }   <br />
+                                stir(woodenSpoon);              <br />               
+                                boil(choppedIngredients);<br />
+                                stir(woodenSpoon);<br />
+                                stir(woodenSpoon);<br />
+                                stir(woodenSpoon);<br />
+                                return(soup);<br />
+                            }<br />
+                            else {<br />
+                                goShopping();<br />
+                            }<br />
+                        }<br />
+                        <br />
+                        eat = makeDinner(soup);<br />
+                    </code>
+                    <h3>Explain the difference between accessing data from arrays and objects.</h3>
+                    <p></p>
+                    <h3>Explain what functions are and why they are useful.</h3>
+                    <p></p>
+                </div>
+                <aside class="two columns">
+                    <h5>
+                        Cultural blogs
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="c1-reflection-blog.html">Reflections</a>
+                        </li>
+                        <li>
+                            <a href="c1-time-and-habits-blog.html">Time and habits</a>
+                        </li>
+                        <li>
+                            <a href="c2-emotional-intelligence.html">Emotional intelligence</a>
+                        </li>
+                        <li>
+                            <a href="c3-meditation-process.html">Meditation process</a>
+                        </li>
+                    </ul>
+                    <h5>
+                        Technical blogs
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="t2-html-css-dom-p1.html">HTML, CSS and DOM part 1</a>
+                        </li>
+                        <li>
+                            <a href="t2-html-css-dom-p2.html">HTML, CSS and DOM part 2</a>
+                        </li>
+                        <li>
+                            <a href="t3-design-to-web-blog.html">Design to web</a>
+                        </li>
+                        <li>
+                            <a href="t4-javascript-basics.html">Design to web</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <i class="fa fa-copyright" aria-hidden="true"></i> Cornelia Schulz</p>
+        </footer>
+    </div>
+</body>
+
+</html>
