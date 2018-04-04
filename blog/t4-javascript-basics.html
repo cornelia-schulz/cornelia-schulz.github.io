@@ -135,9 +135,54 @@
                     </p>
                     </code>
                     <h3>What's the difference between accessing data from arrays and objects?</h3>
-                    <p></p>
+                    <p>
+                        Objects in JavaScript are a collection of properties. To access information within an object you can use
+                         the dot or bracked notations. For example:
+                    </p>
+                    <p>
+                        <code>
+                            var dog = { <br/>
+                                <span class="indent">"heads": 1,</span>  <br/>
+                                <span class="indent">"tail": 1,</span><br/>
+                                <span class="indent">"legs": 4</span> <br/>
+                            }
+                        </code><br/>
+                        To get the number of tails for your dog use: 
+                            <br/>
+                            <code>dog.tail    <span class="indent">// 1</span> </code><br/>
+                            or <br/>
+                            <code>dog['tail'] <span class="indent">// 1</span></code> 
+                        </code>
+                    </p>
+                    <p>
+                            Javascript arrays are a type of object used for storing multiple values in a single variable. 
+                            Each value gets numeric index and may be any data type. 
+                            They have a length property that you can use to see how many items are currently in the array.
+                            To access data within an array, use the index of the item you'd like to get to. 
+                            Bear in mind that the index starts at 0. For example:
+                    </p>
+                    <p>
+                        <code>
+                            var myAnimals = ["dogs", "cats", "mice"];<br/>
+                            myAnimals[1]; <span class="indent">// cats</span>
+                        </code>
+
+                    </p>
+                    <p>The difference in access is that you use index numbers to access an array and a property name to access an object.</p>
                     <h3>What are functions and why are they useful?</h3>
-                    <p></p>
+                    <p>Functions are a fundamental building block in JavaScript. 
+                        They form a set of procedures that the computer will run through when the function is called (invoked) 
+                        for example by clicking on a button, etc.
+                    </p>
+                    <code>
+                        function helloWorld(){<br/>
+                            <span class="indent">console.log("Hello World!");</span> 
+                        }
+                    </code>
+                    <p>This function will simply print the words "Hello World" to the console.
+                        Functions are extremely useful because they can be reused.
+                        You can call them again and again and don't have to repeat all the code that is contained in the function.
+                    </p>
                 </div>
                 <aside class="two columns">
                     <h5>
