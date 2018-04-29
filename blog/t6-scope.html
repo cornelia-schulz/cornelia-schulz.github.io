@@ -59,7 +59,37 @@
         <div class="ten columns">
           <h1>Scope</h1>
           <h3></h3>
-          <p></p>
+          <p>In JavaScript scope determines the visibility of a variable. 
+            There are two types of scope: global and local scope.</p>
+          <h3>Local scope</h3>
+          <p>
+            Each function in JavaScript creates its own scope. 
+            So if you declare a variable inside a function, this variable will only be visible or accessible inside this function.
+            <pre>
+              <code>
+                function makeSoup = new function(){
+                  let ingredients = ["onions", "bacon", "lentils"];  // ingredients is only visible within this function
+                  ...
+                }
+
+                // if you tried to use ingredients here, the program will return undefined
+              </code>
+            </pre>
+          </p>
+          <h3>Global scope</h3>
+          <p>
+            When you are declaring a variable outside of any function, this variable can literally be used anywhere in your code.
+            <pre>
+              <code>let ingredients = ["onions", "bacon", "lentils"];  //ingredients can be used here outside of any function
+                function makeSoup = new function(){
+                  for (var i = 0; i < ingredients.length; i++){  // ingredients can also be used within this function
+                    addToSoup(ingredients[i]);
+                  }                              
+                  ...
+                }
+              </code>
+            </pre>
+          </p>
         </div>
         <aside class="two columns">
           <h5>
