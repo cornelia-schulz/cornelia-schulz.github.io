@@ -59,36 +59,72 @@
         <div class="ten columns">
           <h1>Scope</h1>
           <h3></h3>
-          <p>In JavaScript scope determines the visibility of a variable. 
-            There are two types of scope: global and local scope.</p>
+          <p>In JavaScript scope determines the visibility of a variable. There are two types of scope: local and global scope.</p>
           <h3>Local scope</h3>
           <p>
-            Each function in JavaScript creates its own scope. 
-            So if you declare a variable inside a function, this variable will only be visible or accessible inside this function.
-            <pre>
-              <code>
-                function makeSoup = new function(){
-                  let ingredients = ["onions", "bacon", "lentils"];  // ingredients is only visible within this function
-                  ...
-                }
+            Each function in JavaScript creates its own scope or environment. So if you declare a variable inside a function, this variable
+            will only be visible or accessible inside the environment of this function. This means that variables with the
+            same name can be used in different functions because that's where they stay and that's what they are bound to.
+            Let's look at an example:
+          </p>
+          <pre>
+              <code>function makeSoup = new function(){
+    let ingredients = ["onions", "bacon", "lentils"];  
+        // ingredients is only visible within this function
+    ...
+}
 
-                // if you tried to use ingredients here, the program will return undefined
+// if you tried to use ingredients here outside the function, 
+// the program will return undefined
               </code>
             </pre>
+
+          <p>
+
           </p>
           <h3>Global scope</h3>
           <p>
-            When you are declaring a variable outside of any function, this variable can literally be used anywhere in your code.
+            When you are declaring a variable outside of any function, this variable can literally be accessed from anywhere in your
+            code.
             <pre>
-              <code>let ingredients = ["onions", "bacon", "lentils"];  //ingredients can be used here outside of any function
-                function makeSoup = new function(){
-                  for (var i = 0; i < ingredients.length; i++){  // ingredients can also be used within this function
-                    addToSoup(ingredients[i]);
-                  }                              
-                  ...
-                }
-              </code>
+              <code>let ingredients = ["onions", "bacon", "lentils"];  
+                //ingredients can be used here outside of any function
+
+function makeSoup = new function(){
+  for (var i = 0; i < ingredients.length; i++){  
+                // ingredients can also be used within this function
+    addToSoup(ingredients[i]);
+  }                              
+  ...
+}</code>
             </pre>
+          </p>
+          <h3>Block statements</h3>
+          <p>
+            Block statements are things like if or switch statements or loops, such as for or while loops. They don't create their own
+            scope, so variables that are declared in the block statement belong to the same scope as the block statement
+            itself.
+          </p>
+          <p>
+            ES6 introduced some new keywords for variables: let and const. They are used just like the keyword var. But unlike var, these
+            two keywords can create a local scope inside a block statement.
+          </p>
+          <pre>
+          <code>if ( 10 < 11){
+    var smallest = 10;
+    let biggest = 11;
+  }
+
+console.log(smallest)  // this will print 10
+console.log(biggest)  // this will not print because biggest is undefined
+          </code>
+        </pre>
+          <h3>What's the point of scope in JavaScript?</h3>
+          <p>
+            So, what's the point in limiting the visibility or accessibility of variables and not having everything available everywhere
+            in the code you write? The answer is that scope provides some level of security to your code. By using scope
+            users only have access to the stuff they really need to at a time. It will help improve efficiency and hopefully
+            reduces bugs.
           </p>
         </div>
         <aside class="two columns">
